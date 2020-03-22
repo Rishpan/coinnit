@@ -1,0 +1,31 @@
+{
+  "coins": [
+    {
+      "id": "us-penny",
+      "currency": "usd",
+      "Title": "US Penny",
+      "Country": "United States of America",
+      "Value": "1¢",
+      "History": "The United State's first ever one-cent coin. The first one cent coin was minted in 1972, but the image on it was a lady. In 1872, Congress asked to make the coin smaller and mix the copper with nickel. In 2005, the Licoln Memorial on the back of the coin was changed to a shield reading 'E Plurbius Unum' ",
+      "Composition": "97.5% Zn; 2.5% Cu"
+    },
+    {
+      "id": "us-dollar",
+      "currency": "usd",
+      "Title": "US Dollar Coin",
+      "Country": "United States of America",
+      "Value": "$1",
+      "History": "",
+      "Composition": "77% Cu; 12% Zn; 7% Mn; 4% Ni"
+    },
+    {
+      "id": "us-dime",
+      "currency": "usd",
+      "Title": "US Dime",
+      "Country": "United States of America",
+      "Value": "10¢",
+      "History": "",
+      "Composition": "91.67% Cu; 8.33% Ni (Before 1965- 90% silver, 10% copper)"
+    }
+  ]
+}

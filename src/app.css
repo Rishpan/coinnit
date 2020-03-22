@@ -1,0 +1,105 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #108db8;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  width: 100%;
+  background: #0079d3;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.content {
+  padding: 1rem;
+}
+
+/* My styles */
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.rounded-corners {
+  border-radius: 10px;
+}
+
+header {
+  background-color: #0079d3;
+  padding: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+button {
+  height: 40px;
+}
+
+#search input {
+  width: 100%;
+}
+
+.featured-coins {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.featured-coin {
+  flex: 1;
+  height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  color: black;
+}
+
+.coin-news {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  
+}
+
+table,
+td {
+  border: 1px solid blue;
+}
+
+table {
+  width: 100%;
+}
+.featured-coin a{
+  color: black;
+}
+
