@@ -1,3 +1,19 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+publish_mode: editorial_workflow
+collections:
+  - name: "coin" # Used in routes, e.g., /admin/collections/blog
+    label: "Coin detail" # Used in the UI
+    folder: "_posts/coin" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "id", name: "id", widget: "hidden"}
+      - {label: "Currency", name: "currency", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Country", name: "country", widget: "string"}
+      - {label: "Value", name: "value", widget: "string"}
+      - {label: "History", name: "history", widget: "string"}
+      - {label: "Composition", name: "body", widget: "string"}
