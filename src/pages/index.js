@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Template from './template';
 import Data from './coins-data.json';
 
 export default () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.innerHTML = `
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+    `;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
+
   var featuredCoinElements = [];
   for (var x = 0; x < Data.coins.length; x++) {
     // This is JSX! We need babel to translate this to JavaScript
