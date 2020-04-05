@@ -17,3 +17,8 @@ collections:
       - {label: "Value", name: "value", widget: "string"}
       - {label: "History", name: "history", widget: "string"}
       - {label: "Composition", name: "body", widget: "string"}
+media_folder: “dist/images/uploads"
+media_library: 
+  name: uploadcare 
+  config:    
+    publicKey: demopublickey
