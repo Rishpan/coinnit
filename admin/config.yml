@@ -7,7 +7,7 @@ collections:
     label: "Coin detail" # Used in the UI
     folder: "_posts/coin" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: {{year}}-{{month}}-{{slug}} # Filename template, e.g., YYYY-MM-DD-title.md
     preview_path: preview/{{slug}}
     fields: # The fields for each document, usually in front matter
       - {label: "id", name: "id", widget: "hidden"}
